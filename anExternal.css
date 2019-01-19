@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <title>Embedded Style Sheet</title>
 <style type="text/css">
-    body {
-    	background-color: lightblue;
-    }
 	h1   {color: blue; border:5px solid powderblue; border-style: dotted;}
 	p1  {color: red; font-family: courier;}
   	p2	{font-family: impact;}
