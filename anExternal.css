@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>Embedded Style Sheet</title>
 <style type="text/css">
-	h1   {color: blue; border:5px solid powderblue; border-style: dotted;}
+	h1  {color: blue;}
 	p1  {color: red; font-family: courier;}
-  	p2	{font-family: impact;}
+  	p2	{font-family: impact; border:10px solid powderblue; border-style: dotted;}
   	
 </style>
 </head>
