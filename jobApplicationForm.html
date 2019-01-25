@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Getting To Know You</title>
+	<link rel="stylesheet" type="text/css" href="form.css" />
+	
+	<style>
+		h2 {
+			font-size: 40px;
+			text-align: center;
+			color: gray;
+		}
+		
+		#Account {
+			padding: 15px;
+			font-weight: bold;
+		}
+		
+		body {
+			background-image: url('wood_pattern.png');
+		}
+		
+		ul {
+			list-style-type: none;
+			padding-left: 0px;
+		}
+		
+		fieldset {
+			border: 0;
+		}
+		
+		#BasicInfo {
+			font-weight: bold; 
+			padding: 30px;
+		}
+		
+		#Commitments {
+			float: left;
+			padding: 30px;
+		}
+		
+		#PersonalStatement {
+			font-weight: bold;
+			font-size: 20px;
+			float: left;
+		}
+		
+		#Jonah {
+			float:right;
+		}
+		
+</style>
+</head>
+<body>
+
+<h2>Getting To Know You!</h2>
+
+<form action="gettingtoknowyouform.asp" method="post">
+
+	<fieldset id="Account">
+		<div class="field">
+			<label>Username:</label> 
+			<input type="username" name="username">
+		</div>	
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Basic Info</legend>
+		<div class="field" id="BasicInfo">
+			First name: <input type="text" name="firstname">
+			Last name: <input type="text" name="lastname"><br>
+			<label>Age:</label> 
+			<select name="Age">
+				<option value="" selected="true">Select your Age</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">4</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>								
+			</select
+		</div>
+		
+		<div>
+			<label>Gender:</label> 
+			<select name="Gender">
+				<option value="" selected="true">Select your Gender</option>
+				<option value="Female">Female</option>
+				<option value="Male">Male</option>	
+				<option value="Other">Other</option>
+				<option value="No Gender">No Gender</option>																				
+			</select
+		</div>
+	</fieldset>
+
+	<fieldset id="Jonah">
+		<div class="field">
+			<iframe src="https://giphy.com/embed/5GoVLqeAOo6PK" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/excited-screaming-jonah-hill-5GoVLqeAOo6PK">via GIPHY</a></p>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Commitments</legend>
+		<div class="field" id="Commitments">
+			<label>Are you currently attending school?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What activities are you involved in? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_sp" value="Sports">Sports</li>
+				<li><input type="checkbox" name="position_ld" value="Leadership">Leadership</li>
+				<li><input type="checkbox" name="position_vo" value="Volunteering">Volunteering</li>
+				<li><input type="checkbox" name="position_jb" value="Job">Job</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset id="PersonalStatement">
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>What are 3 things we should know about you?</label><br>
+			<textarea name="project" rows="10" cols="100"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="Submit form" id="Submit">
+		</div>
+	</fieldset>
+
+
+</form>
+</body>
+</html>
