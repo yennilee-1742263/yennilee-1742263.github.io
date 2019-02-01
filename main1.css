@@ -2952,7 +2952,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: url(../../images/wood_pattern.png);
+			background-image: url(../../wood_pattern.png);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
